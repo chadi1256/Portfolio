@@ -1,0 +1,222 @@
+h1 {
+    margin-top: 20vh;
+    font-size: 55px;
+    color: #333;
+}
+
+p {
+    font-size: 25px;
+}
+
+.quote {
+    margin-top: 30vh;
+    font-size: 24px;
+    color: #666;
+    line-height: 1.5;
+    z-index: 2;
+}
+
+.author {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #999;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 40vh;
+    left: 75vh;
+    transform: translate(-50%, -50%);
+
+
+}
+
+#content {
+    left: 40vh;
+    top: -50vh;
+    width: 75vh;
+    position: relative;
+    color: white;
+}
+
+body {
+    overflow: hidden;
+    background-color: black;
+
+}
+
+img {
+    background-image: url("plato-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 105%;
+    height: 80vh;
+    transform: scaleY(0, 5);
+    transform: scaleX(1);
+    margin-top: 20vh;
+}
+
+.knop1 {
+
+    position: absolute;
+
+    top: 65vh;
+
+    left: 55vh;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+    border: none;
+
+    color: black;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 18px;
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    font-family: Arial Black;
+
+}
+
+
+
+.knop1:hover {
+
+    background-color: #656465;
+
+    cursor: pointer;
+
+    color: white;
+
+    transition: 0.2s;
+
+}
+
+
+.knop2 {
+
+    position: absolute;
+
+    top: 65vh;
+
+    left: 70vh;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+    border: none;
+
+    color: black;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 18px;
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    font-family: Arial Black;
+
+}
+
+
+
+.knop2:hover {
+
+    background-color: #656465;
+
+    cursor: pointer;
+
+    color: white;
+
+    transition: 0.2s;
+
+}
+
+.knop3 {
+
+    position: absolute;
+
+    top: 65vh;
+
+    left: 88vh;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+    border: none;
+
+    color: black;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 18px;
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    font-family: Arial Black;
+
+}
+
+
+
+.knop3:hover {
+
+    background-color: #656465;
+
+    cursor: pointer;
+
+    color: white;
+
+    transition: 0.2s;
+
+}

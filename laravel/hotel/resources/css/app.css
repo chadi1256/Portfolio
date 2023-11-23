@@ -1,0 +1,229 @@
+   body,
+
+   h1,
+   p {
+       margin: 0;
+       padding: 0;
+   }
+
+   #app {
+       position: relative;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+   }
+
+   header {
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       background-color: #333;
+       color: #fff;
+       padding: 10px;
+       z-index: 1;
+   }
+
+   body {
+       font-family: 'Nunito', sans-serif;
+       background-color: #f0f0f0;
+   }
+
+   nav {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   nav a {
+       color: #fff;
+       text-decoration: none;
+       margin: 0 10px;
+       font-size: 18px;
+   }
+
+   nav a:hover {
+       text-decoration: underline;
+   }
+
+   nav .navbar-collapse {
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+   }
+
+   nav .navbar-nav {
+       display: flex;
+       list-style: none;
+       margin: 0;
+       padding: 0;
+   }
+
+   nav .navbar-nav li.nav-item {
+       margin: 0 10px;
+       display: flex;
+       align-items: center;
+   }
+
+   nav .navbar-nav a {
+       color: rgb(0, 0, 0) !important;
+   }
+
+   main {
+       position: relative;
+       flex: 1;
+       padding: 20px;
+       z-index: 0;
+   }
+
+   body.web #app::before {
+       content: '';
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background: url('/hotel/resources/img/hotel.jpg') center center fixed;
+       background-size: cover;
+       z-index: -1;
+   }
+
+   #overlay {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       text-align: center;
+       color: #fff;
+       z-index: 2;
+       width: 100%;
+       /* Set width to 100% */
+   }
+
+
+   #book-room-btn {
+       background-color: #007bff;
+       color: #fff;
+       padding: 20px 30px;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       font-size: 26px;
+       border-radius: 20px;
+   }
+
+   #book-room-btn:hover {
+       background-color: #394552;
+   }
+
+   footer {
+
+       color: #000000 !important;
+       text-align: center;
+       padding: 10px;
+       z-index: 1;
+   }
+
+
+   /* room101 */
+
+   .room-container {
+       margin-top: 8rem;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px;
+   }
+
+   .roomimg img {
+       border-radius: 20px;
+       height: 43rem;
+       max-width: 65rem;
+       background-size: contain;
+   }
+
+   .room-description {
+       max-width: 50rem;
+       flex: 1;
+       text-align: left;
+       padding: 30px;
+       background-color: #f8f8f8;
+
+   }
+
+   .book-now-btn {
+       display: block;
+       margin-top: 15px;
+
+       padding: 10px 20px;
+       font-size: 16px;
+       background-color: #007bff;
+
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+   }
+
+   .book-now-btn:hover {
+       background-color: #0056b3;
+
+   }
+
+
+
+
+
+
+   /* facility page */
+
+   img[alt="facility1pic"] {
+       border-radius: 20px;
+       height: 43rem;
+   }
+
+   .facility-container {
+       margin-top: 8rem;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px;
+   }
+
+   .facility-description {
+       max-width: 50rem;
+       flex: 1;
+       text-align: left;
+       padding: 20px;
+       background-color: #f8f8f8;
+
+   }
+
+   .book-a-room-now-btn {
+       display: inline-block;
+       /* Change from block to inline-block */
+       margin-top: 15px;
+       padding: 10px 20px;
+       font-size: 16px;
+       background-color: #007bff;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+   }
+
+   .book-a-room-now-btn:hover {
+       background-color: #0056b3;
+   }
+
+   /* Add this rule to give the button a link */
+   .book-a-room-now-btn {
+       text-decoration: none;
+   }
+
+
+
+   /* Style the button when hovered */
+   .book-a-room-now-btn:hover {
+       background-color: #0056b3;
+   }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Daily Quotes</title>
+    <link rel="stylesheet" type="text/css" href="style3.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Refresh Page Every 10 Seconds</title>
+</head>
+
+<body>
+    <img src="plato-header.jpg" alt="img">
+
+
+
+
+    <div>
+
+        <a href="index.html" class="knop1">HOME</a>
+        <a href="suggest.php" class="knop2">SUGGEST</a>
+        <a href="quotes.html" class="knop3">ALL QUOTES</a>
+
+
+
+
+
+
+
+
+
+        <div class="centered">
+            <h1>Daily Quotes</h1>
+        </div>
+        <div>
+            <p id="content">
+                "The only way to do great work is to love what you do."
+                - Steve Jobs</p>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            var content = "This is the initial content";
+            var index = 0;
+            var contentList = [
+                "'The only thing I know is that I know nothing.'  - Socrates",
+                "'To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.'  - Ralph Waldo Emerson",
+                "'The best way to predict the future is to invent it.'  - Alan Kay",
+                "'The unexamined life is not worth living.'  - Socrates",
+                "'The greatest glory in living lies not in never falling, but in rising every time we fall.'  - Nelson Mandela",
+                "'I have not failed. I've just found 10,000 ways that won't work.'  - Thomas Edison",
+                "'If you want to lift yourself up, lift up someone else.'  - Booker T. Washington",
+                "'I can't change the direction of the wind, but I can adjust my sails to always reach my destination.'  - Jimmy Dean",
+                "'Believe you can and you're halfway there.'  - Theodore Roosevelt",
+                "'If you tell the truth, you don't have to remember anything.'  - Mark Twain",
+                "'Happiness is not something ready-made. It comes from your own actions.'  - Dalai Lama",
+                "'In the end, we will remember not the words of our enemies, but the silence of our friends.'  - Martin Luther King Jr.",
+                "'Life is 10% what happens to you and 90% how you react to it.'  - Charles R. Swindoll",
+                "'The only way to do great work is to love what you do.'  - Steve Jobs",
+                "'The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.'  - Helen Keller",
+                "'The true test of a man's character is what he does when no one is watching.'  - John Wooden",
+                "'It does not matter how slowly you go as long as you do not stop.'  - Confucius",
+                "'Success is not final, failure is not fatal: it is the courage to continue that counts.'  - Winston Churchill",
+                "'You miss 100% of the shots you don't take.'  - Wayne Gretzky",
+                "'A person who never made a mistake never tried anything new.'  - Albert Einstein",
+                "'If you want to live a happy life, tie it to a goal, not to people or things.'  - Albert Einstein",
+                "'The only true wisdom is in knowing you know nothing.'  - Socrates",
+                "'The greatest glory in living lies not in never falling, but in rising every time we fall.'  - Nelson Mandela",
+                "'It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.'  - Charles Darwin",
+                "'The best way to find yourself is to lose yourself in the service of others.'  - Mahatma Gandhi",
+                "'A man who stands for nothing will fall for anything.'  - Malcolm X",
+                "'We cannot solve our problems with the same thinking we used when we created them.'  - Albert Einstein",
+                "'Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.'  - Steve Jobs",
+                "'The only thing necessary for the triumph of evil is for good men to do nothing.'  - Edmund Burke"];
+
+            function changeContent() {
+                content = contentList[index];
+                index++;
+                if (index >= contentList.length) {
+                    index = 0;
+                }
+                document.getElementById("content").innerHTML = content;
+            }
+            setInterval(changeContent, 86000);
+        </script>
+
+</body>
+
+</html>

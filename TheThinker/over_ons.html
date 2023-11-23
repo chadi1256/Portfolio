@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="over_ons.css">
+
+</head>
+
+<body>
+  <nav>
+
+    <label for="touch" id="drop-menu"><span>MENU</span> </label>
+    <input type="checkbox" id="touch">
+
+    <ul class="slide">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="suggest.php">SUGGEST A QUOTE</a></li>
+      <li><a href="quotes.html">ALL QUOTES</a></li>
+
+    </ul>
+
+  </nav>
+
+
+  <div class="wrapper">
+    <h1 class="titel">over ons</h1>
+    <div class="our_team">
+      <div class="team team_1">
+        <div class="team_img">
+          <img src="foto's over ons/foto1.jpg" alt="team_member">
+        </div>
+        <div class="team_role">student</div>
+
+        <div class="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="info">
+          <h4>Chadi Hashem</h4>
+
+        </div>
+      </div>
+      <div class="team team_2">
+        <div class="team_img">
+          <img src="foto's over ons/foto2.jpg" alt="team_member">
+        </div>
+        <div class="team_role">student</div>
+        <div class="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="info">
+          <h4>Miran Elezovic</h4>
+
+        </div>
+      </div>
+      <div class="team team_3">
+        <div class="team_img">
+          <img src="foto's over ons/foto3.jpg" alt="team_member">
+        </div>
+        <div class="team_role">student</div>
+        <div class="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="info">
+          <h4>Gabor Bosma</h4>
+
+        </div>
+      </div>
+      <div class="team team_4">
+        <div class="team_img">
+          <img src="foto's over ons/foto4.jpg" alt="team_member">
+        </div>
+        <div class="team_role">student</div>
+        <div class="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="info">
+          <h4>Dico Bakker</h4>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var menu_items = document.querySelectorAll(".menu");
+
+
+    Array.from(menu_items).forEach(function (menu) {
+      menu.addEventListener("click", function () {
+        this.classList.toggle("active")
+      });
+    });
+  </script>
+
+  <footer>
+    <div class="contact">
+      <h1>Contact</h1>
+      <p>Heeft u vragen of opmerkingen? Neem dan contact met ons op via het onderstaande formulier.</p>
+      <form action="contact.php" method="post">
+        <input type="text" name="name" placeholder="Naam" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <textarea name="message" class="bericht" placeholder="Bericht" required></textarea>
+        <button type="submit" name="submit">Verstuur</button>
+      </form>
+    </div>
+  </footer>
+</body>
